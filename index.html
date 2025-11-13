@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafePay App Download</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
+      
+      if (/android/i.test(ua)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.fastamoniorg.bizflex"; // Android
+      } else if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/za/app/bizflex-africa/id6754340965"; // iOS
+      } else {
+        window.location.href = "https://safepay.ng"; // Web fallback
+      }
+    });
+  </script>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f8fafc;
+      color: #111827;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #6b7280;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Redirecting you to SafePay App...</h1>
+    <p>If nothing happens, <a href="https://safepay.ng">click here</a>.</p>
+  </div>
+</body>
+</html>
